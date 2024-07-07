@@ -1,5 +1,9 @@
 ## Hi there 👋
-
+- 🔭 I'm hau_dang or dev_snake ✨ _special_ ✨
+- 🌱 I’m currently learning at FPT
+- 💬 Ask me about anything
+- 📫 How to reach me: punch me ! 🤷‍♂️
+- ⚡ Fun fact: I want to be a hacker
 <!--
 **dev-snake/dev-snake** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
