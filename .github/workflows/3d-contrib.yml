@@ -10,32 +10,21 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: 1) Checkout repository
+      - name: 1) Checkout
         uses: actions/checkout@v4
 
-      - name: 2) Install Go
-        uses: actions/setup-go@v5
+      - name: 2) Generate 3D Profile
+        uses: Platane/gh-profile-3d-contrib@master
+        id: generator
         with:
-          go-version: "1.21"
+          username: dev-snake
+          output: 'profile-3d-contrib/profile-night-rainbow.svg'
+          config: |
+            {
+              "palette": "rainbow"
+            }
 
-      - name: 3) Clone 3D contrib generator
-        run: |
-          git clone https://github.com/yoshi389111/github-profile-3d-contrib.git generator
-
-      - name: 4) Build binary
-        run: |
-          cd generator
-          go build -o contrib3d main.go
-
-      - name: 5) Generate SVG (rainbow theme)
-        run: |
-          mkdir -p profile-3d-contrib
-          ./generator/contrib3d \
-            --user dev-snake \
-            --palette rainbow \
-            --output profile-3d-contrib/profile-night-rainbow.svg
-
-      - name: 6) Deploy to output branch
+      - name: 3) Upload to output branch
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
