@@ -33,3 +33,4 @@ jobs:
           else
             git commit -m "chore: update 3D contribution graph"
             git push
+          fi
