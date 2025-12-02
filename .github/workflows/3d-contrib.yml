@@ -1,8 +1,8 @@
-name: 3D Contribution Graph
+name: Generate 3D Contribution Graph
 
 on:
   schedule:
-    - cron: "0 3 * * *"  # chạy mỗi ngày lúc 03:00 UTC
+    - cron: "0 3 * * *"   # chạy mỗi ngày lúc 03:00 UTC
   workflow_dispatch:
 
 jobs:
@@ -13,17 +13,26 @@ jobs:
       - name: 1) Checkout repository
         uses: actions/checkout@v4
 
-      - name: 2) Generate 3D Contribution Graph
-        uses: yoshi389111/github-profile-3d-contrib@v1
+      - name: 2) Setup Node.js
+        uses: actions/setup-node@v4
         with:
-          username: dev-snake               # tên GitHub của anh
-          theme: rainbow                   # theme đẹp nhất
-          filename: profile-night-rainbow  # tên file SVG (không cần .svg)
-          output_dir: ./profile-3d-contrib # thư mục xuất file
+          node-version: 18
 
-      - name: 3) Deploy to output branch
+      - name: 3) Install 3D contrib generator
+        run: |
+          npm install -g github-profile-3d-contrib
+
+      - name: 4) Generate 3D Contribution SVG
+        run: |
+          mkdir -p profile-3d-contrib
+          github-profile-3d-contrib \
+            --user dev-snake \
+            --palette rainbow \
+            --output profile-3d-contrib/profile-night-rainbow.svg
+
+      - name: 5) Deploy to output branch
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./profile-3d-contrib
           publish_branch: output
+          publish_dir: ./profile-3d-contrib
