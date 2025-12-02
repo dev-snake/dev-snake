@@ -17,28 +17,6 @@
   </a>
 </p>
 
----
-
-### 🧑‍💻 About me
-
-- 🔭  Currently building:
-  - AI Agent Fanpage: tự động đọc comment/inbox, phân loại intent, auto reply, dashboard realtime.
-  - Brutalist UI components & dashboards cho dev.
-- 🌱  Learning sâu hơn về:
-  - Next.js 16, React 19, WebSocket/SSE, Facebook Graph API.
-  - Python tools (automation, CLI/GUI) & Flutter cho mobile control/IoT.
-- ⚙️  Hứng thú với:
-  - GIS / Map, water-pump control, IoT dashboards.
-  - DevTools: extension VSCode / Chrome, tool tối ưu workflow cho dev.
-- 💬  Ask me about:
-  - Fullstack (Next.js, Node/Express, MongoDB).
-  - Realtime system (Webhook, Socket, SSE).
-  - Tối ưu UI/UX theo kiểu neo-brutalism nhưng vẫn usable.
-- 📫  Reach me:
-  - Email: **(điền email của anh vào đây)**
-  - Facebook / Zalo: **(thêm link nếu muốn)**
-
----
 
 ### 🧰 Tech stack
 
