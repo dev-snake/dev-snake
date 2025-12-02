@@ -16,7 +16,7 @@ jobs:
       - name: 2) Clone profile-3d-contrib
         run: |
           git clone https://github.com/yoshi389111/github-profile-3d-contrib.git tmp-3d
-          cp -R tmp-3d/profile-3d-contrib ./profile-3d-contrib
+          cp -R tmp-3d ./profile-3d-contrib
 
       - name: 3) Generate 3D profile (dark theme)
         run: |
