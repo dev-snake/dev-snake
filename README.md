@@ -1,7 +1,3 @@
-<p align="center">
-  <img src="https://github.com/dev-snake.png?size=200" 
-       style="border-radius:50%; box-shadow:0 0 25px #00f2ff;" />
-</p>
 
 <!-- PROFILE HEADER -->
 <h1 align="center">Hi, I'm Dang Hau 👋</h1>
