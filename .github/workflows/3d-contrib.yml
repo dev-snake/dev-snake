@@ -2,7 +2,7 @@ name: 3D Contribution Graph
 
 on:
   schedule:
-    - cron: "0 3 * * *" # chạy mỗi ngày lúc 03:00 UTC
+    - cron: "0 3 * * *"  # chạy mỗi ngày lúc 03:00 UTC
   workflow_dispatch:
 
 jobs:
@@ -10,28 +10,20 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: 1) Checkout repo
+      - name: 1) Checkout repository
         uses: actions/checkout@v4
 
-      - name: 2) Clone profile-3d-contrib
-        run: |
-          git clone https://github.com/yoshi389111/github-profile-3d-contrib.git tmp-3d
-          cp -R tmp-3d ./profile-3d-contrib
+      - name: 2) Generate 3D Contribution Graph
+        uses: yoshi389111/github-profile-3d-contrib@v1
+        with:
+          username: dev-snake               # tên GitHub của anh
+          theme: rainbow                   # theme đẹp nhất
+          filename: profile-night-rainbow  # tên file SVG (không cần .svg)
+          output_dir: ./profile-3d-contrib # thư mục xuất file
 
-      - name: 3) Generate 3D profile (dark theme)
-        run: |
-          cd profile-3d-contrib
-          docker run \
-            -v $PWD:/data \
-            ghcr.io/yoshi389111/github-profile-3d-contrib:latest \
-            --user dev-snake \
-            --palette rainbow \
-            --locale en \
-            --output profile-night-rainbow.svg
-
-      - name: 4) Push generated files to output branch
+      - name: 3) Deploy to output branch
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_branch: output
           publish_dir: ./profile-3d-contrib
+          publish_branch: output
