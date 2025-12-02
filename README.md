@@ -1,5 +1,6 @@
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=1200&center=true&vCenter=true&color=09F7A0&width=520&lines=Fullstack+Developer;AI+Agent+Fanpage+Creator;Automation+%26+Webhook+Specialist;GIS+%2F+IoT+Systems;Shipping+projects+every+day+🚀" />
+  <img src="https://github.com/dev-snake.png?size=200" 
+       style="border-radius:50%; box-shadow:0 0 25px #00f2ff;" />
 </p>
 
 <!-- PROFILE HEADER -->
