@@ -123,10 +123,7 @@
 ### 🗺️ 3D Contribution Map
 
 <p align="center">
-  <img 
-    src="https://raw.githubusercontent.com/dev-snake/dev-snake/output/profile-3d-contrib/profile-night-rainbow.svg" 
-    width="700" 
-    alt="3D Contribution Map"
-  />
+<img src="https://raw.githubusercontent.com/dev-snake/dev-snake/main/profile-3d-contrib/profile-night-rainbow.svg" width="700" />
+
 </p>
 
