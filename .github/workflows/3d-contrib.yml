@@ -1,12 +1,12 @@
 name: GitHub-Profile-3D-Contrib
 
 on:
-  schedule:            # chạy mỗi ngày, giờ anh muốn chỉnh thì sửa cron
+  schedule:            # chạy mỗi ngày, giờ muốn thì chỉnh cron
     - cron: "0 18 * * *"   # 18:00 UTC ~ 01:00 sáng VN
-  workflow_dispatch:   # cho phép bấm chạy tay
+  workflow_dispatch:   # cho phép bấm chạy tay trong tab Actions
 
 permissions:
-  contents: write      # cho phép commit vào repo
+  contents: write      # cho phép workflow commit vào repo
 
 jobs:
   build:
@@ -18,7 +18,7 @@ jobs:
         uses: actions/checkout@v5
 
       - name: Generate 3D contrib images
-        uses: yoshi389111/github-profile-3d-contrib@0.9.1
+        uses: yoshi389111/github-profile-3d-contrib@latest
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           USERNAME: ${{ github.repository_owner }}
@@ -33,4 +33,3 @@ jobs:
           else
             git commit -m "chore: update 3D contribution graph"
             git push
-          fi
