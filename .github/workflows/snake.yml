@@ -1,9 +1,9 @@
-name: Generate Snake
+name: GitHub Snake
 
 on:
   schedule:
     - cron: "0 0 * * *"   # chạy mỗi ngày 00:00 UTC
-  workflow_dispatch:       # cho phép chạy tay
+  workflow_dispatch:       # cho chạy tay
   push:
     branches:
       - main
@@ -11,22 +11,25 @@ on:
 jobs:
   generate:
     runs-on: ubuntu-latest
+    timeout-minutes: 10
 
     steps:
-      - name: Checkout
+      - name: 1. Checkout repository
         uses: actions/checkout@v4
 
-      - name: Generate snake animation
-        uses: Platane/snk@v3
+      - name: 2. Generate GitHub contribution snake
+        uses: Platane/snk/svg-only@v3
         with:
-          github_user_name: dev-snake
+          github_user_name: ${{ github.repository_owner }}
           outputs: |
-            dist/github-contribution-grid-snake-dark.svg?palette=github-dark
-
-      - name: Push snake to output branch
-        uses: crazy-max/ghaction-github-pages@v4
-        with:
-          target_branch: output
-          build_dir: dist
+            dist/github-snake.svg
+            dist/github-snake-dark.svg?palette=github-dark
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: 3. Deploy to output branch
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist
+          publish_branch: output
