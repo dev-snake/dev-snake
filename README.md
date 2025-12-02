@@ -120,6 +120,13 @@
 
 ---
 
-### 💡 Fun fact
+### 🗺️ 3D Contribution Map
 
-> I break things on purpose, just to see how far I can push the system – then ship a cleaner version.
+<p align="center">
+  <img 
+    src="https://raw.githubusercontent.com/dev-snake/dev-snake/output/profile-3d-contrib/profile-night-rainbow.svg" 
+    width="700" 
+    alt="3D Contribution Map"
+  />
+</p>
+
