@@ -1,5 +1,5 @@
 <!-- PROFILE HEADER -->
-<h1 align="center">Hi, I'm Dev 👋</h1>
+<h1 align="center">Hi, I'm Dang Hau 👋</h1>
 
 <p align="center">
   <a href="https://github.com/dev-snake">
@@ -53,46 +53,6 @@
 
 ---
 
-### 📊 GitHub stats
-
-<p align="center">
-  <img
-    src="https://github-readme-stats.vercel.app/api?username=dev-snake&show_icons=true&theme=radical&hide_border=true"
-    alt="GitHub stats"
-    height="160"
-  />
-  &nbsp;
-  <img
-    src="https://github-readme-streak-stats.herokuapp.com/?user=dev-snake&theme=radical&hide_border=true"
-    alt="GitHub streak"
-    height="160"
-  />
-</p>
-
-<p align="center">
-  <img
-    src="https://github-readme-stats.vercel.app/api/top-langs/?username=dev-snake&layout=compact&theme=radical&hide_border=true"
-    alt="Top languages"
-    height="160"
-  />
-</p>
-
----
-
-### 🚀 Featured stuff
-
-- 🤖 **AI Agent Fanpage**  
-  Hệ thống đọc comment/inbox Facebook, phân loại intent, gợi ý hành động, auto reply, log toàn bộ pipeline.
-
-- 🎨 **Brutalist UI / Dashboard**  
-  Thiết kế giao diện kiểu neo-brutalism, tối ưu cho seller / non-tech user nhưng vẫn thân thiện với dev.
-
-- 🌊 **GIS / IoT / Water pump tools**  
-  Điều khiển & giám sát thiết bị, lưu lịch sử, dashboard realtime, kết hợp map & automation.
-
-> Luôn trong trạng thái “đang build cái gì đó mới” – nếu anh có idea hay ho, cứ ping 👀
-
----
 
 ### 🐍 Contribution Snake
 
