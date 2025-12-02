@@ -1,43 +1,36 @@
-name: Generate 3D Contribution Graph
+name: GitHub-Profile-3D-Contrib
 
 on:
-  schedule:
-    - cron: "0 3 * * *"
-  workflow_dispatch:
+  schedule:            # chạy mỗi ngày, giờ anh muốn chỉnh thì sửa cron
+    - cron: "0 18 * * *"   # 18:00 UTC ~ 01:00 sáng VN
+  workflow_dispatch:   # cho phép bấm chạy tay
+
+permissions:
+  contents: write      # cho phép commit vào repo
 
 jobs:
   build:
     runs-on: ubuntu-latest
-
-    permissions:
-      contents: write
-      packages: read
+    name: generate-github-profile-3d-contrib
 
     steps:
-      - name: 1) Checkout repository
-        uses: actions/checkout@v4
+      - name: Checkout
+        uses: actions/checkout@v5
 
-      - name: 2) Login to GHCR
+      - name: Generate 3D contrib images
+        uses: yoshi389111/github-profile-3d-contrib@0.9.1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          USERNAME: ${{ github.repository_owner }}
+
+      - name: Commit & Push
         run: |
-          echo "${{ secrets.GITHUB_TOKEN }}" | docker login ghcr.io -u ${{ github.actor }} --password-stdin
-
-      - name: 3) Pull Docker image
-        run: |
-          docker pull ghcr.io/yoshi389111/github-profile-3d-contrib:latest
-
-      - name: 4) Generate 3D Contribution Map
-        run: |
-          mkdir -p profile-3d-contrib
-          docker run \
-            -v $PWD/profile-3d-contrib:/out \
-            ghcr.io/yoshi389111/github-profile-3d-contrib:latest \
-            --user dev-snake \
-            --palette rainbow \
-            --output /out/profile-night-rainbow.svg
-
-      - name: 5) Deploy to output branch
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./profile-3d-contrib
-          publish_branch: output
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add -A .
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "chore: update 3D contribution graph"
+            git push
+          fi
