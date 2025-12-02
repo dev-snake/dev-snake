@@ -9,24 +9,35 @@ jobs:
   build:
     runs-on: ubuntu-latest
 
+    permissions:
+      contents: write
+      packages: read
+
     steps:
-      - name: 1) Checkout
+      - name: 1) Checkout repository
         uses: actions/checkout@v4
 
-      - name: 2) Generate 3D Profile
-        uses: Platane/gh-profile-3d-contrib@master
-        id: generator
-        with:
-          username: dev-snake
-          output: 'profile-3d-contrib/profile-night-rainbow.svg'
-          config: |
-            {
-              "palette": "rainbow"
-            }
+      - name: 2) Login to GHCR
+        run: |
+          echo "${{ secrets.GITHUB_TOKEN }}" | docker login ghcr.io -u ${{ github.actor }} --password-stdin
 
-      - name: 3) Upload to output branch
+      - name: 3) Pull Docker image
+        run: |
+          docker pull ghcr.io/yoshi389111/github-profile-3d-contrib:latest
+
+      - name: 4) Generate 3D Contribution Map
+        run: |
+          mkdir -p profile-3d-contrib
+          docker run \
+            -v $PWD/profile-3d-contrib:/out \
+            ghcr.io/yoshi389111/github-profile-3d-contrib:latest \
+            --user dev-snake \
+            --palette rainbow \
+            --output /out/profile-night-rainbow.svg
+
+      - name: 5) Deploy to output branch
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_branch: output
           publish_dir: ./profile-3d-contrib
+          publish_branch: output
