@@ -166,12 +166,7 @@
   </a>
   <br><strong>VSCode</strong>
 </td>
-<td align="center" width="96">
-  <a href="#">
-    <img src="https://skillicons.dev/icons?i=flutter" width="48" height="48" alt="Flutter" />
-  </a>
-  <br><strong>Flutter</strong>
-</td>
+
 </tr>
 </table>
 
