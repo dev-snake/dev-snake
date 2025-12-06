@@ -2,7 +2,12 @@
 <div align="center">
   
   <!-- Animated Banner -->
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=180&section=header&text=Dang%20Hau&fontSize=42&fontColor=fff&animation=twinkling&fontAlignY=32&desc=Fullstack%20Developer%20%7C%20AI%20Agent%20%26%20Automation%20%7C%20GIS%20%2F%20IoT&descAlignY=52&descSize=18"/>
+  <p align="center">
+    <a href="https://github.com/dev-snake">
+      <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=22&pause=1000&center=true&vCenter=true&width=460&lines=Fullstack+Developer;AI+Agent+%26+Automation;GIS+%2F+IoT+Enthusiast;Always+shipping+side+projects" alt="Typing SVG" />
+    </a>
+  </p>
+
 
   <!-- Typing Animation -->
   <a href="https://github.com/dev-snake">
