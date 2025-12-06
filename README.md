@@ -9,10 +9,7 @@
   </p>
 
 
-  <!-- Typing Animation -->
-  <a href="https://github.com/dev-snake">
-    <img src="https://readme-typing-svg.demolab.com? font=Fira+Code&weight=600&size=24&duration=3000&pause=1000&color=00D9FF&center=true&vCenter=true&multiline=true&repeat=true&width=600&height=100&lines=%F0%9F%9A%80+Building+the+future%2C+one+commit+at+a+time;%F0%9F%92%BB+Code+%E2%80%A2+Create+%E2%80%A2+Innovate;%F0%9F%8C%9F+Turning+ideas+into+reality" alt="Typing SVG" />
-  </a>
+
 
   <!-- Profile Stats Badges -->
   <p>
@@ -36,7 +33,7 @@
 
 <br/>
 
-## <img src="https://media2.giphy.com/media/QssGEmpkyEOhBCb7e1/giphy.gif? cid=ecf05e47a0n3gi1bfqntqmob8g9aid1oyj2wr3ds3mg700bl&rid=giphy.gif" width="28"> **Tech Arsenal**
+## <img src="https://media2.giphy.com/media/QssGEmpkyEOhBCb7e1/giphy.gif?cid=ecf05e47a0n3gi1bfqntqmob8g9aid1oyj2wr3ds3mg700bl&rid=giphy.gif" width="28"> **Tech Arsenal**
 
 <div align="center">
 
@@ -147,7 +144,7 @@
 <tr>
 <td align="center" width="96">
   <a href="#">
-    <img src="https://skillicons. dev/icons?i=docker" width="48" height="48" alt="Docker" />
+    <img src="https://skillicons.dev/icons?i=docker" width="48" height="48" alt="Docker" />
   </a>
   <br><strong>Docker</strong>
 </td>
@@ -184,7 +181,7 @@
 
 <!-- Tech Stack Badges -->
 <div align="center">
-  <img src="https://img.shields.io/badge/Next.js-000? style=for-the-badge&logo=nextdotjs&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Next.js-000?style=for-the-badge&logo=nextdotjs&logoColor=white"/>
   <img src="https://img. shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB"/>
   <img src="https://img.shields.io/badge/Vue.js-35495E?style=for-the-badge&logo=vuedotjs&logoColor=4FC08D"/>
   <img src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white"/>
