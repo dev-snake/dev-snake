@@ -4,7 +4,7 @@
   <!-- Typing -->
   <p align="center">
     <a href="https://github.com/dev-snake">
-      <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=22&pause=1000&center=true&vCenter=true&width=460&lines=Dang+Van+Hau;Fullstack+Developer;AI+Agent+%26+Automation;GIS+%2F+IoT+Enthusiast;Always+shipping+side+projects" alt="Typing SVG" />
+      <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=22&pause=1000&center=true&vCenter=true&width=460&lines=Dang+Van+Hau;Fullstack+Developer;AI+Agent+%26+Automation" alt="Typing SVG" />
     </a>
   </p>
 
