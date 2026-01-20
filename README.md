@@ -113,12 +113,7 @@
   </a>
   <br><strong>NestJS</strong>
 </td>
-<td align="center" width="96">
-  <a href="#">
-    <img src="https://skillicons.dev/icons?i=python" width="48" height="48" alt="Python" />
-  </a>
-  <br><strong>Python</strong>
-</td>
+
 <td align="center" width="96">
   <a href="#">
     <img src="https://skillicons.dev/icons?i=mongodb" width="48" height="48" alt="MongoDB" />
