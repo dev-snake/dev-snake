@@ -20,25 +20,17 @@
     <a href="https://github.com/dev-snake?tab=followers">
       <img src="https://img.shields.io/github/followers/dev-snake?style=for-the-badge&logo=github&color=00d9ff&labelColor=1a1b27" alt="Followers" />
     </a>
-    <a href="https://github.com/dev-snake?tab=repositories">
+    <!-- <a href="https://github.com/dev-snake?tab=repositories">
       <img src="https://img.shields.io/badge/Focus-Fullstack%20Development-00d9ff?style=for-the-badge&logo=stackblitz&logoColor=white" alt="Focus" />
-    </a>
+    </a> -->
   </p>
 
 </div>
 
-<br/>
-
-<!-- Animated Divider -->
-<img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="100%">
-
-<br/>
-
-## <img src="https://media2.giphy.com/media/QssGEmpkyEOhBCb7e1/giphy.gif?cid=ecf05e47a0n3gi1bfqntqmob8g9aid1oyj2wr3ds3mg700bl&rid=giphy.gif" width="28"> **Tech Arsenal**
 
 <div align="center">
 
-### 🌐 Frontend & UI
+###  Frontend
 <table>
 <tr>
 <td align="center" width="96">
@@ -92,7 +84,7 @@
 </tr>
 </table>
 
-### ⚙️ Backend & Database
+### Backend & Database
 <table>
 <tr>
 <td align="center" width="96">
@@ -135,7 +127,7 @@
 </tr>
 </table>
 
-### 🛠️ DevOps & Tools
+###  DevOps & Tools
 <table>
 <tr>
 <td align="center" width="96">
@@ -192,7 +184,7 @@
 
 ---
 
-### 🐍 Contribution Snake
+###  Contribution Snake
 
 <p align="center">
   <picture>
@@ -204,11 +196,11 @@
 
 ---
 
-### 🗺️ 3D Contribution Map
+###  3D Contribution Map
 
 <p align="center">
   <img src="https://raw.githubusercontent.com/dev-snake/dev-snake/main/profile-3d-contrib/profile-night-rainbow.svg" width="100%" />
 </p>
 
 <!-- Footer Wave -->
-<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=100&section=footer"/>
+<!-- <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=100&section=footer"/> -->
