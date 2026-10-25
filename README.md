@@ -3,7 +3,7 @@
 </p>
 
 <p align="center">
-  <a href="https://portfolio-v3-blush-ten.vercel.app/">Portfolio</a> · <a href="https://haudev.vercel.app/">HauDev</a>
+  <a href="https://www.linkedin.com/in/dang-van-hau-3118853a0/">LinkedIn</a> · <a href="https://portfolio-v3-blush-ten.vercel.app/">Portfolio</a> · <a href="https://haudev.vercel.app/">HauDev</a>
 </p>
 
 ### Contribution snake
