@@ -2,10 +2,6 @@
   <img src="./profile-terminal-goku.svg" width="100%" alt="Dang Van Hau — full-stack developer. Son Goku ASCII portrait and technology stack." />
 </p>
 
-<p align="center">
-  <a href="https://www.linkedin.com/in/dang-van-hau-3118853a0/">LinkedIn</a> · <a href="https://portfolio-v3-blush-ten.vercel.app/">Portfolio</a> · <a href="https://haudev.vercel.app/">HauDev</a>
-</p>
-
 ### Contribution snake
 
 <picture>
