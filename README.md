@@ -10,6 +10,9 @@
   <img src="https://raw.githubusercontent.com/dev-snake/dev-snake/output/github-snake.svg" width="100%" alt="Snake animation tracing my GitHub contributions" />
 </picture>
 
-### 3D contribution map
+<details>
+<summary>3D contribution map</summary>
 
 <img src="https://raw.githubusercontent.com/dev-snake/dev-snake/main/profile-3d-contrib/profile-night-view.svg" width="100%" alt="3D map of my GitHub contributions" />
+
+</details>
